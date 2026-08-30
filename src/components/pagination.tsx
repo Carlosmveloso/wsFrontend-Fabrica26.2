@@ -30,11 +30,11 @@ export function Pagination({ page, totalPages, query, role }: PaginationProps) {
           href={buildHref(page - 1, query, role)}
           className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors px-3 py-1.5"
         >
-          <ChevronLeft size={16} /> Previous
+          <ChevronLeft size={16} /> Anterior
         </Link>
       ) : (
         <span className="inline-flex items-center gap-1 text-sm text-muted-foreground/40 px-3 py-1.5">
-          <ChevronLeft size={16} /> Previous
+          <ChevronLeft size={16} /> Anterior
         </span>
       )}
 
@@ -59,11 +59,11 @@ export function Pagination({ page, totalPages, query, role }: PaginationProps) {
           href={buildHref(page + 1, query, role)}
           className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors px-3 py-1.5"
         >
-          Next <ChevronRight size={16} />
+          Próximo <ChevronRight size={16} />
         </Link>
       ) : (
         <span className="inline-flex items-center gap-1 text-sm text-muted-foreground/40 px-3 py-1.5">
-          Next <ChevronRight size={16} />
+          Próximo <ChevronRight size={16} />
         </span>
       )}
     </nav>
