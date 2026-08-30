@@ -9,9 +9,12 @@ const inter = Inter({
   });
 
 export const metadata: Metadata = {
-  title: "Heroes Explorer — Personagens de Overwatch",
+  title: "Overwatch",
   description:
     "Descubra personagens, funções, histórias e habilidades do universo de Overwatch.",
+    icons: {
+      icon: "/overwatch--v1.ico"
+    }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
